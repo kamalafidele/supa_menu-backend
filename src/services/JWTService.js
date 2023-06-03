@@ -19,7 +19,7 @@ class JWTService {
   }
 
   // eslint-disable-next-line consistent-return
-  static async verifyToken(req, res, next) {
+  static verifyToken(req, res, next) {
     const token = JWTService.getToken(req);
 
     if (token) {
